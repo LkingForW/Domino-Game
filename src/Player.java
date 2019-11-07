@@ -1,3 +1,9 @@
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+        
 public class Player {
 
     //Maybe add name
@@ -5,15 +11,14 @@ public class Player {
     //winner status ?
     
     final int handSIZE = 10;
-    Domino[] dominoAtHand = new Domino[handSIZE]; //Maybe this should be and Array list instead of an array for when we want to remove peices from the players hand
     int playerNumber;
-    
+    List<Domino> dominoAtHand = new ArrayList<>(); // must be a list , with the properties of Array List
     
     
     
     public void printHand(){
         for(int i = 0 ; i < handSIZE; i++ ){
-            System.out.println(dominoAtHand[i].sideOne + "/" + dominoAtHand[i].sideTwo );
+            System.out.println(dominoAtHand.get(i).sideOne + "/" + dominoAtHand.get(i).sideTwo );
         }
     }
     

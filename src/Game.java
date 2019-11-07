@@ -71,7 +71,7 @@ public class Game {
         for(int j = 0; j < 4; j++){ // for every player
             Player tempPlayer = new Player();
             for(int i =0 ; i < 10; i++){ // for every piece
-                tempPlayer.dominoAtHand[i] = dominoPieces[counter];
+                tempPlayer.dominoAtHand.add(dominoPieces[counter]);
                 counter++;
             }
             players[j] = tempPlayer;
