@@ -18,7 +18,7 @@ public class Player {
     
     public void printHand(){
         for(int i = 0 ; i < handSIZE; i++ ){
-            System.out.println(dominoAtHand.get(i).sideOne + "/" + dominoAtHand.get(i).sideTwo );
+            System.out.println("["+(i+1)+"] "+dominoAtHand.get(i).sideOne + "/" + dominoAtHand.get(i).sideTwo );
         }
     }
     

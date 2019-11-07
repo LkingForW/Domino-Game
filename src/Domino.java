@@ -1,7 +1,4 @@
-/**
- *
- * @author banjaminmaker
- */
+
 public class Domino {
     
     int sideOne ;
