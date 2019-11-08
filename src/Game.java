@@ -17,7 +17,7 @@ public class Game {
         for(int row = 0; row  <= 9 ; row ++){
             for(int col = row; col <= 9 ; col ++ ){
                 Domino dominoPiece = new Domino();                
-               dominoPiece.sideOne = row;
+                dominoPiece.sideOne = row;
                 dominoPiece.sideTwo = col;
                 dominoPiece.identifier = counter;
                 dominoPieces[counter] = dominoPiece;
@@ -72,7 +72,7 @@ public class Game {
     //prints all the hands of the players to debug their options 
     public void printPlayerPieces(){
         for(int i = 0; i< NUMBER_OF_PLAYERS; i++){
-            System.out.println("Player: "+ i);
+            System.out.println("Player: "+ (i+1));
            players[i].printHand();
         }
     }

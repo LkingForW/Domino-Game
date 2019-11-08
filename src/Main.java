@@ -1,5 +1,5 @@
 
-
+import FrameSetup.Frame; // this is the main class for the gui and will be controlled by Alain 
 
 
 public class Main {
@@ -14,8 +14,14 @@ public class Main {
         newGame.printDominoPieces(); //print the domino pieces to debug
         newGame.piecesToPlayers();//distributes the domino pieces to the player
         newGame.printPlayerPieces(); //prints the pieces the players hand in hand
+        
+        
+        //GUI Side of main
     
+    }
     
+    public static void setUpGUI(){
+         //GUI Side of main
     }
     
 }
